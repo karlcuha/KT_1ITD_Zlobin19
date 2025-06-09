@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Отчёт по лабораторной работе</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #3498db;
+      border-radius: 6px;
+      margin: 10px 0;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .comment {
+      background: #dbe9f4;
+      border-left: 5px solid #2980b9;
+      padding: 10px 15px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      font-size: 1.05em;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Отчёт по лабораторной работе №1</h1>
+  <p><strong>Образовательная организация:</strong> IThub college
+Колледж информационных
+и креативных технологий</p>
+  <p><strong>Студент:</strong> Злобин Лев</p>
+  <p><strong>Группа:</strong> 1ЭИТ1</p>
+  <p><strong>Год:</strong> 2025</p>
+
+  <h2>1. Полная топология сети</h2>
+  <img src="images/topology_full.png" alt="Полная топология сети" />
+  <div class="comment">
+    На рисунке показана вся топология, включающая роутер с именем <em>Zlobin</em>, коммутаторы и компьютеры, соединённые сетевыми кабелями.
+  </div>
+
+  <h2>2. Ключевые элементы с комментариями</h2>
+
+  <h3>2.1 Изменение hostname роутера</h3>
+  <img src="images/hostname_change.png" alt="Изменение hostname роутера" />
+  <div class="comment">
+    Здесь мы изменили имя роутера на <strong>Zlobin</strong> для удобства идентификации в сети.
+  </div>
+
+  <h3>2.2 Назначение IP-адреса на интерфейсе</h3>
+  <img src="images/ip_assignment.png" alt="Настройка IP адреса" />
+  <div class="comment">
+    Назначен IP-адрес с третьим октетом, равным номеру в группе 19, чтобы обеспечить уникальность адресации.
+  </div>
+
+  <h3>2.3 Вывод команды <code>show running-config</code></h3>
+  <img src="images/show_running_config.png" alt="Конфигурация роутера" />
+  <div class="comment">
+    Конфигурация роутера, сохранённая для корректной работы сети.
+  </div>
+
+  <h3>2.4 Проверка связи с помощью <code>ping</code></h3>
+  <img src="images/ping_success.png" alt="Успешный ping" />
+  <div class="comment">
+    Результаты команды ping показывают успешный обмен пакетами между устройствами, что подтверждает работоспособность сети.
+  </div>
+
+  <h2>3. Изображение работающей топологии</h2>
+  <img src="images/topology_working.png" alt="Работающая топология" />
+  <div class="comment">
+    Здесь показана работающая сеть с успешными тестами связи.
+  </div>
+
+  <h2>4. Выводы</h2>
+  <p>
+    В ходе работы была собрана сеть с корректной адресацией и конфигурацией. Все устройства получили необходимые IP-адреса,
+    hostname роутера изменён на фамилию для удобства. Проверка связи с помощью ping показала успешный обмен данными.
+    Конфигурация сохранена и готова к дальнейшему использованию.
+  </p>
+
+  <footer>
+    &copy; 2025
+  </footer>
+</body>
+</html>
